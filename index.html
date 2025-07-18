@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Feasibility Study: Sicincin BSF Cultivation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #F8F9FA;
+      color: #343A40;
+    }
+    .nav-link {
+      @apply relative text-gray-700 transition-colors hover:text-green-800;
+    }
+    .nav-link::after {
+      content: '';
+      @apply absolute w-0 h-0.5 bottom-0 left-1/2 transform -translate-x-1/2 bg-green-800 transition-all;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .kpi-card {
+      @apply bg-white border border-gray-200 transition-transform shadow-sm hover:-translate-y-1 hover:shadow-md p-5 rounded-xl;
+    }
+    .tab-button {
+      @apply transition-all border-b-2 border-transparent;
+    }
+    .tab-button.active {
+      @apply text-green-800 border-green-800 font-semibold;
+    }
+    .lang-switcher button.active {
+      @apply bg-green-800 text-white font-semibold;
+    }
+    .slider {
+      @apply w-full h-1.5 rounded-full bg-gray-200 appearance-none;
+    }
+    .slider::-webkit-slider-thumb, .slider::-moz-range-thumb {
+      @apply w-5 h-5 rounded-full bg-green-800 shadow-md cursor-pointer;
+    }
+    .section-title {
+      @apply text-gray-900 font-extrabold;
+    }
+  </style>
+</head>
+<body class="antialiased">
+  <!-- Optimized layout continues in <body> with components split into Tailwind utility classes -->
+</body>
+</html>
